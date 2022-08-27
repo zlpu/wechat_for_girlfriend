@@ -319,13 +319,13 @@ else:
 #提醒吃饭
 now_time=int(time.localtime().tm_hour)
 # print(now_time)
-if now_time<12 and now_time>8:
+if now_time<4 and now_time>0:
     eat=get_eatmorning_words()
     m_n_a="[ 早安！宝 ]"
-if now_time<19 and now_time>=12:
+if now_time<11 and now_time>=4:
     eat = get_eatnoon_words()
     m_n_a = "[ 下午好吖！ ]"
-if (now_time<=24 and now_time>=19)or(now_time<=8):
+if now_time<=24 and now_time>=11:
     eat = get_goodnight_words()
     m_n_a = "[ 记得晚上早点睡觉哈，然后做个好梦！]"
 
