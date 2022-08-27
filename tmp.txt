@@ -1,0 +1,17 @@
+微信测试号消息模板内容：
+标题：你有新的消息，请查收！
+正文内容：
+[{{m_n_a.DATA}}]
+{{eat.DATA}}
+所在城市：{{city1.DATA}}
+当前时间：{{daytime.DATA}}
+今日天气：{{weather1.DATA}}
+当前温度：{{temperature1.DATA}}
+{{sid.DATA}}
+距离领导的生日还有{{birthday_lover.DATA}}天
+距离秘书的生日还有{{birthday_my.DATA}}天
+距离元旦还有{{yd.DATA}}天
+距离春节还有{{cj.DATA}}天
+===家乡:{{city2.DATA}} 天气:{{weather2.DATA}}===
+今日评分最高电影：{{mv.DATA}}
+每日一句：{{words.DATA}}
