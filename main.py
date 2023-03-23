@@ -210,11 +210,11 @@ def get_weekday():
 
 
 #获取天气
-def get_weather(city):
-  url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
-  res = requests.get(url).json()
-  weather = res['data']['list'][0]
-  return weather['weather'], math.floor(weather['temp'])
+# def get_weather(city):
+#   url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
+#   res = requests.get(url).json()
+#   weather = res['data']['list'][0]
+#   return weather['weather'], math.floor(weather['temp'])
 
 #计算在一起的日期
 def get_count():
@@ -302,8 +302,8 @@ def top_mv():
 3、调用函数，获取数据，保存为字典格式数据
 """
 #获取天气和温度
-wea1, temperature1 = get_weather(city1)
-wea2, temperature2 = get_weather(city1)
+#wea1, temperature1 = get_weather(city1)
+#wea2, temperature2 = get_weather(city1)
 
 #计算到春节的天数
 j_yd, j_cj = get_spr("01-01","01-12")
@@ -333,8 +333,8 @@ if now_time<=24 and now_time>=11:
 data = {"m_n_a":{"value":m_n_a,"color":get_random_color()},
         "eat":{"value":eat,"color":get_random_color()},
         "daytime":{"value":get_weekday(),"color":get_random_color()},
-        "city1":{"value":city1,"color":get_random_color()},
-        "city2":{"value":city2,"color":get_random_color()},
+        "city1":{"value":适宜,"color":get_random_color()},
+        "city2":{"value":适宜,"color":get_random_color()},
         "weather1":{"value":wea1,"color":get_random_color()},
         "weather2":{"value":wea2,"color":get_random_color()},
         "temperature1":{"value":str(temperature1)+"℃","color":get_random_color()},
